@@ -13,6 +13,7 @@ atomic commits with meaningful commit messages.
 Finally, in the `screen.css` file, add the 361 modified, minified reset CSS and set up a basic
 typographic grid. Keep your CSS to under 30 lines, not including the reset CSS and comments.
 
+<!--
 Fixed:
 head
 Tabulation
@@ -57,4 +58,5 @@ id="navigation"
 
 <img href="file:///Users/scarlethawk/Desktop/Photo%20Saves/DSC2235.JPEG" alt="Photo of Hank" />
 <h3>3rd-Year ITM Undergraduate</h3>
-<h4>Majoring in Cybersecurity</h4>
+<h4>Majoring in Cybersecurity</h4>.
+-->
