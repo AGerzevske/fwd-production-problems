@@ -7,62 +7,46 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* stylelint-enable */
 
 /* Begin site styles below */
-/*  1em = 16px  thus 1.125em = 18px*/
 
+/* CSS to conform to style that was removed from HTML */
+/*  top | right | bottom | left */
+/*  1em = 16px  thus 1.125em = 18px*/
+/*  baseline.png created and added to background for testing */
 html {
   font-size: 1.125em; /* 18px / 16px = 1.125em */
-  line-height: 1.222em; /* 22px / 18px = 1.2em */
-  padding: 1.222em 1em 1em 1em;
+  line-height: 1.222em; /* 22px / 18px = 1.222em */
+  padding: 1.222em 1em 1.222em 1em;
+  background-image: url(baseline.png);
 }
 
-.green-background  {
-  background-color: green;
-  padding: 1.222em 1em 1em 1em;
-}
-
-
-
-small {
-  font-size: 0.5625em; /* 18px / 16px = 1.125em */
-  line-height: 0.611em; /* 22px / 18px = 1.2em */
-}
-.quick-facts {
-  padding: 0 0 .6111em 1.222em;
-  list-style-type: square;
-  color: green;
-}
-
-.quick-facts-title {
+/* Original html called for most headings to be bold */
+/*  not enough room to specify each header independantly in under 30 */
+h1, h2, h3 {
   font-weight: bold;
+  font-size: 2.25em; /* 1.125em * 2 = 2.25em*/
+  line-height: 2.444em; /* 1.222em * 2 = 2.444em*/
 }
 
-h2 {
-  font-weight: bold;
-  font-size: 2.250em;
-  line-height: 2.444em;/*22 * 2 = 44*/
-}
-
+/* The original html h3 called for italics */
 h3 {
   font-style: italic;
-  font-size: 27px;
-  line-height: 33px;/*22 * 2 = 44*/
-  text-transform: uppercase;
 }
 
-p {
-  padding-bottom: 1.2em;
-  text-indent: 1em;
+/* Create the green-background article was calling for */
+.green-background  {
+  background-color: green;
+  padding: 0.611em 1em 0.611em 1em;
 }
 
-h2 + p,
-h3 + p,
-h4 + p,
-.intro {
-  text-indent: 0;
+/* Add discs and padding to .quick-facts ul li  */
+.quick-facts {
+  list-style-type: disc;
+  padding: 0.611em 1em 1.222em 1em; /* 11 / 18 = .6111*/
 }
 
-
-
-li {
-  padding-bottom: .6111em; /* 11 / 18 = .6111*/
+/* Make "Quick Facts:" be bolded and seperated but still */
+/*  part of the list */
+.quick-facts-title {
+  font-weight: bold;
+  padding: 0 0 1.222em 0;
 }
