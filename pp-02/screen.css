@@ -19,16 +19,16 @@ html {
   background-image: url(baseline.png);
 }
 
-/* Original html called for most headings to be bold */
+/* Original html called for most headings to be bold. Classes used instead of nested headers*/
 /*  not enough room to specify each header independantly in under 30 */
-h1, h2, h3 {
+h1, h2, .year, .major {
   font-weight: bold;
   font-size: 2.25em; /* 1.125em * 2 = 2.25em*/
   line-height: 2.444em; /* 1.222em * 2 = 2.444em*/
 }
 
-/* The original html h3 called for italics */
-h3 {
+/* The original html h3 called for italics. Classes used instead of nested headers*/
+.year {
   font-style: italic;
 }
 
